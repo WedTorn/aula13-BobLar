@@ -1,0 +1,152 @@
+:root {
+    --marca: #1d5c63;
+    --marca-escura: #154448;
+    --destaque: #f4a62a;
+    --fundo: #fdf8f1;
+    --texto: #24323a;
+}
+
+body {
+    font-family: "Nunito", Arial, Helvetica, sans-serif;
+    background-color: var(--fundo);
+    color: var(--texto);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1, h2, h3 {
+    font-weight: 800;
+    color: var(--marca-escura);
+}
+
+.bg-marca {
+    background-color: var(--marca);
+}
+
+.navbar .nav-link {
+    font-weight: 700;
+}
+
+.btn-primary {
+    --bs-btn-bg: var(--marca);
+    --bs-btn-border-color: var(--marca);
+    --bs-btn-hover-bg: var(--marca-escura);
+    --bs-btn-hover-border-color: var(--marca-escura);
+    --bs-btn-active-bg: var(--marca-escura);
+    --bs-btn-active-border-color: var(--marca-escura);
+}
+
+.btn-outline-primary {
+    --bs-btn-color: var(--marca);
+    --bs-btn-border-color: var(--marca);
+    --bs-btn-hover-bg: var(--marca);
+    --bs-btn-hover-border-color: var(--marca);
+    --bs-btn-active-bg: var(--marca-escura);
+    --bs-btn-active-border-color: var(--marca-escura);
+}
+
+a:focus-visible,
+button:focus-visible,
+.btn:focus-visible,
+.navbar .nav-link:focus-visible,
+.navbar .navbar-brand:focus-visible,
+.pagination .page-link:focus-visible {
+    outline: 3px solid var(--marca-escura);
+    outline-offset: 3px;
+    box-shadow: none;
+}
+
+.navbar a:focus-visible,
+.navbar button:focus-visible,
+.navbar .nav-link:focus-visible,
+.navbar .navbar-brand:focus-visible,
+.rodape a:focus-visible,
+#carrosselDestaques button:focus-visible {
+    outline-color: var(--destaque);
+}
+
+.card-cao {
+    border: 0;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(36, 50, 58, 0.08);
+}
+
+.card-cao .card-img-top {
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
+.card-info {
+    display: inline-block;
+    align-self: flex-start;
+    padding: 2px 10px;
+    border-radius: 999px;
+    background-color: #fbe5bf;
+    color: #5a3a06;
+    font-size: 0.875rem;
+    font-weight: 700;
+}
+
+#carrosselDestaques .carousel-caption {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 2.5rem 1.25rem 2.25rem;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+#carrosselDestaques .carousel-caption p {
+    margin-bottom: 0;
+}
+
+#carrosselDestaques .carousel-control-prev-icon,
+#carrosselDestaques .carousel-control-next-icon {
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.55);
+    background-size: 55%;
+}
+
+.pagination {
+    --bs-pagination-color: var(--marca);
+    --bs-pagination-hover-color: var(--marca-escura);
+    --bs-pagination-active-bg: var(--marca);
+    --bs-pagination-active-border-color: var(--marca);
+}
+
+.passos li {
+    margin-bottom: 0.75rem;
+}
+
+.rodape {
+    background-color: var(--marca-escura);
+    color: #ffffff;
+}
+
+.rodape a {
+    color: #ffd58a;
+}
+
+section {
+    scroll-margin-top: 4.5rem;
+}
+
+@media (max-width: 575.98px) {
+    #carrosselDestaques .carousel-item img {
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+    }
+
+    #carrosselDestaques .carousel-caption {
+        padding: 1.5rem 0.75rem 2rem;
+    }
+
+    #carrosselDestaques .carousel-caption p {
+        font-size: 0.875rem;
+    }
+}
